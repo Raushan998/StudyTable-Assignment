@@ -1,0 +1,59 @@
+{% extends 'base.html'%}
+{% load static%}
+{%  block content %}
+    
+<div class="box">
+    <div class="box-1">
+    </div>
+    {% if step_1 %}
+        <div class="box-2">
+            <span class="box-2_1"><span style="font-size:3rem;">STUDY</span> <span style="font-size:5rem;">table</span></span>
+            <br></br>
+            <span class="box-2_2"><span style="font-size:3rem;">Care a Smile</span></span>
+            <div class="d-flex flex-row bd-highlight mb-3">
+                <div class="p-2 bd-highlight">
+                    <span class="box-2_3_1"><i class="fas fa-step-backward"></i></span>
+                </div>
+                <div class="p-2 bd-highlight">
+                    <a href="/index">
+                        <span type="submit" class="box-2_3_2"><i class="fas fa-step-forward"></i></span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    {% endif %}
+    {% if step %}
+        <div class="box-4">
+            <form action="/index" method="post">
+                {% csrf_token %}
+                {% if step_2 %}
+                    <input required type="text" class="name-1" name="name" placeholder="Name">
+                {% endif %}
+                {% if step_3%}
+                    <input required type="text" class="name-1" name="subject1" placeholder="Subject 1">
+                {% endif %}
+                {% if step_4%}
+                   <input required type="text" class="name-1" name="subject2" placeholder="Subject 2">
+                {% endif %}
+                {% if step_5%}
+                    <input required type="text" class="name-1" name="subject3" placeholder="Subject 3">
+                {% endif %}
+                {% if step_6%}
+                    <input required type="text" class="name-1" name="subject4" placeholder="Subject 4">
+                {% endif %}
+                {% if step_7%}
+                    <input required type="text" class="name-1" name="subject5" placeholder="Subject 5">
+                {% endif %}
+                {% if step_8 %}
+                    <input required type="text" class="name-1" name="subject6" placeholder="Subject 6">
+                {% endif %}
+                <hr class="hr-tag">
+            </form>
+            <span class="box-4_1"><span style="font-size:2rem;">STUDY</span> <span style="font-size:3rem;">table</span></span>
+            <br>
+            <span class="box-4_2"><span style="font-size:2rem;">Care a Smile</span></span>
+        </div>
+    {% endif %}
+    <div class="box-3" style="grid-row:1/-1;grid-column:3/-1;background-color:black;opacity:0.5"></div>
+</div>
+{% endblock %}

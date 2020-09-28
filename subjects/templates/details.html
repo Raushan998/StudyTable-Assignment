@@ -1,0 +1,30 @@
+{% extends 'base.html'%}
+{% load static%}
+{%  block content %}
+<div class="box" >
+    <div class="box-1" style="background-color:#ffff;">
+    </div>
+    <div class="box-6">
+        <div class="items">
+            {{student.subject1}}
+             <br>
+            {{student.subject2}}
+            <br>
+            {{student.subject3}}
+            <br>
+            {{student.subject4}}
+            <br>
+            {{student.subject5}}
+            <br>
+            {{student.subject6}}
+        </div>
+        <span class="name-tag"><span style="font-size:1.5rem">BITTU KUMAR</span></span>
+        <span class="box-6_1"><span style="font-size:2rem;">STUDY</span> <span
+                style="font-size:3rem;">table</span></span>
+        <br>
+        <span class="box-6_2"><span style="font-size:2rem;">Care a Smile</span></span>
+    </div>
+    
+    <div class="box-3" style="grid-row:1/-1;grid-column:3/-1;background-color:black;opacity:0.5;background-color:#fff;"></div>
+</div>
+{% endblock %}

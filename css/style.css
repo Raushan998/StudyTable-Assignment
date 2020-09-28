@@ -1,0 +1,71 @@
+.box{
+   position:relative;
+    display:grid;
+    grid-template-rows:100vh;
+    grid-template-columns: repeat(3,1fr);
+}
+.box-1{
+    grid-row:1/-1;
+    grid-column:1/2;
+    background-color:black;
+    opacity:0.5
+}
+.box-2{
+    position:sticky;
+    grid-row:1/-1;
+    grid-column:2/3;
+    background-color:black;
+}
+.box-2_1{
+    position:absolute;
+    top:30vh;
+    color:#ffff; 
+    left:5rem;
+}
+.box-2_2{
+    position:absolute;
+    top:42vh;
+    color:#ffff; 
+    left:5rem;
+}
+@media(max-width:1300px){
+    .box{
+        position:relative;
+        display:grid;
+        grid-template-rows:100vh;
+        grid-template-columns: repeat(3,1fr);
+   }
+
+}
+@media(max-width:1500px){
+    .box{
+        position:relative;
+        display:grid;
+        grid-template-rows: 100vh;
+        grid-template-columns: 50vh 60vh 50vh;
+    }
+}
+@media(max-width:900px){
+    .box{
+        position:relative;
+        display:grid;
+        grid-template-rows:100vh;
+        grid-template-columns:20vh 70vh 30vh;
+    }
+}
+@media(max-width:600px){
+    .box{
+        position:relative;
+        display:grid;
+        grid-template: 100vh;
+        grid-template-columns:10vh 100vh 10vh;
+    }
+}
+@media(max-width:450px){
+    .box{
+        position:relative;
+        display:grid;
+        grid-template: 100vh;
+        grid-template-columns:0vh 100vh 0vh;
+    }
+}
