@@ -25,7 +25,7 @@ SECRET_KEY = '!qoipl%&pso%so71hrd+5b707^g1b04628&kav@0ch@*%8raaz'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['https://studytable123.herokuapp.com']
+ALLOWED_HOSTS = ['studytable123.herokuapp.com']
 
 
 # Application definition
